@@ -1,0 +1,16 @@
+<div class="home01-container">
+    <div class="user-actions">
+        <button (click)="showComp01a=!showComp01a">Comp01a</button>&nbsp;&nbsp;
+        <button (click)="showComp01b=!showComp01b">Comp01b</button>&nbsp;&nbsp;
+        <button (click)="showComp01c=!showComp01c">Comp01c</button>&nbsp;&nbsp;
+    </div>
+    <div *ngIf="showComp01a">
+        <app-comp01a></app-comp01a>
+    </div>
+    <div *ngIf="showComp01b">
+        <app-comp01b></app-comp01b>
+    </div>
+    <div *ngIf="showComp01c">
+        <app-comp01c></app-comp01c>
+    </div>
+</div>

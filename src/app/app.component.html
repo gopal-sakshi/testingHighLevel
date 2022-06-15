@@ -2,4 +2,9 @@
   <div class="main-content" style="font-weight:500; color:rgb(212, 93, 93);">
     Welcome to testing high level
   </div>
+  <div class="router-links">
+    <a routerLink="test01">test01 module</a>&nbsp;&nbsp;
+    <a [routerLink]="['test02']">test02 module</a>
+  </div>
+  <router-outlet></router-outlet>
 </div>
